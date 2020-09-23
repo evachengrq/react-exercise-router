@@ -4,7 +4,8 @@ import {BrowserRouter, BrowserRouter as Router, Route, Switch} from 'react-route
 import Header from "./Header"
 import Home from "./Home";
 import Profile from "./Profile";
-import AboutUs from "./AboutUs"; 
+import AboutUs from "./AboutUs";
+import "bootstrap/dist/css/bootstrap.css";
 
 class App extends Component {
   render() {

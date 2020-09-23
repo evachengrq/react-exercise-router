@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
-    state = {
-        homeUrl: "/",
-        myProfileUrl: "/my-profile",
-        aboutMeUrl: "/about-us"
-    }
     render() {
         return (
-            <nav>
-                <ul>
-                    <li><link to = {this.state.homeUrl} className = "nav-link"></link>Home</li>
-                    <li><link to = {this.state.myProfileUrl} className = "nav-link"></link>My Profile</li>
-                    <li><link to = {this.state.aboutUsUrl} className = "nav-link"></link>About Us</li>
-                </ul>
+            <nav className = "navbar navbar-expand-lg navbar-light bg-light" id = "header">
+                <Link to="/" className = "nav-link">Home</Link>
+                <Link to="/my-profile" className = "nav-link">My Profile</Link>
+                <Link to="/about-us" className = "nav-link">About Us</Link>
             </nav>
         )
     }
